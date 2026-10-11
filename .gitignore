@@ -7,14 +7,13 @@ venv/
 # Secrets
 .env
 .env.*
-
-# Allow an example configuration
 !.env.example
 
-# Generated data
-data/documents/
-data/qdrant/
+# Ingested files and normalized documents
+data/sources/
+data/loaded_documents/
 
-# Test and tooling artifacts
+# Test artifacts
 .pytest_cache/
 .coverage
+htmlcov/
