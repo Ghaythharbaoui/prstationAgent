@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets
+.env
+.env.*
+
+# Allow an example configuration
+!.env.example
+
+# Generated data
+data/documents/
+data/qdrant/
+
+# Test and tooling artifacts
+.pytest_cache/
+.coverage
