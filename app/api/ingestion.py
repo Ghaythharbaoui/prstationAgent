@@ -128,6 +128,14 @@ async def ingest_files(
                     document=document,
                 )
 
+                from app.rag.indexing import index_document
+
+                await asyncio.to_thread(
+                    index_document,
+                    document_id,
+                    document,
+                )
+
             except ValueError as exc:
                 results.append(
                     FileIngestionResult(
